@@ -8,7 +8,6 @@ const myServer = http.createServer((reqzzzz, respppp) => {
         ${reqzzzz.connection.remoteAddress}\n fromPath: ${reqzzzz.url}\n` ;
         //Never use ***Date.now() : return ms since Jan 1 ,1970
         //****req.ip when use express() 
-
         //create log file
         console.log(log);
         fs.appendFile("log.txt", log, (err, data) => {
