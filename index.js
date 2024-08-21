@@ -1,3 +1,3 @@
-const ifun = require('./3-Session-Cookies');
+const ifun = require('./6-URL_Manipulation');
 
 ifun.fun();
