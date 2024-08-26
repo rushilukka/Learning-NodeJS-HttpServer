@@ -1,3 +1,3 @@
-const ifun = require('./6-URL_Manipulation');
+const ifun = require('./1-CreatingLog');
 
 ifun.fun();

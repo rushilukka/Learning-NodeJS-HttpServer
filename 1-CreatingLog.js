@@ -1,3 +1,5 @@
+//      1-CreatingLog
+
 const http = require("http");
 const fs = require("fs");
 
@@ -12,13 +14,16 @@ const fun = () =>{
         //so 2 times append So use:_----
 
         //-----------------------------------------------
-        const log = `${Date().toString()}: New Req Received from 
-        ${reqzzzz.connection.remoteAddress}\n fromPath: ${reqzzzz.url}\n` ;
+        const log = `
+        -----------------------------------------------
+        ${Date().toString()}:\n 
+        New Req Received from ----> ${reqzzzz.connection.remoteAddress}\n 
+        fromPath: ${reqzzzz.url}\n` ;
         //Never use ***Date.now() : return ms since Jan 1 ,1970
        
        
          //create log file
-        console.log(log);
+        //console.log(log);
         fs.appendFile("log.txt", log, (err, data) => {
             switch (reqzzzz.url) {
                 case "/":
